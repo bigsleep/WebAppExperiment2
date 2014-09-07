@@ -1,0 +1,25 @@
+{
+    "port": ENV_PORT,
+    "oauth2": {
+        "oauth2AuthorizationServerName" : "google",
+        "oauth2AuthorizationUri" : "https://accounts.google.com/o/oauth2/auth",
+        "oauth2TokenUri" : "https://accounts.google.com/o/oauth2/token",
+        "oauth2UserInfoUri" : "https://www.googleapis.com/plus/v1/people/me",
+        "oauth2ClientId" : "ENV_OAUTH2_CLIENT_ID",
+        "oauth2ClientSecret" : "ENV_OAUTH2_CLIENT_SECRET",
+        "oauth2RedirectUri" : "ENV_OAUTH2_REDIRECT_URI",
+        "oauth2Scope" : "openid email profile",
+        "oauth2AccessTokenType" : "BEARER"
+    },
+    "redis": {
+        "host" : "127.0.0.1",
+        "port" : 6379,
+        "database" : 11
+    },
+    "session": {
+        "sessionName": "SID",
+        "sessionIsSecure": false,
+        "sessionTtl" : 120,
+        "sessionIdLength" : 40
+    }
+}
