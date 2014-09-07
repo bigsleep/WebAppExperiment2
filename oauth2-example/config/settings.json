@@ -1,5 +1,6 @@
 {
     "port": ENV_PORT,
+    "uri": "ENV_BASE_URI",
     "oauth2": {
         "oauth2AuthorizationServerName" : "google",
         "oauth2AuthorizationUri" : "https://accounts.google.com/o/oauth2/auth",

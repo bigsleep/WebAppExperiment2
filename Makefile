@@ -28,6 +28,7 @@ build_push:
 
 run:
 	sed -i -e s/ENV_PORT/${PORT}/ ${setting_file}
+	sed -i -e 's#ENV_BASE_URI#${BASE_URI}#' ${setting_file}
 	sed -i -e s/ENV_OAUTH2_CLIENT_ID/${OAUTH2_CLIENT_ID}/ ${setting_file}
 	sed -i -e s/ENV_OAUTH2_CLIENT_SECRET/${OAUTH2_CLIENT_SECRET}/ ${setting_file}
 	sed -i -e 's#ENV_OAUTH2_REDIRECT_URI#${OAUTH2_REDIRECT_URI}#' ${setting_file}
